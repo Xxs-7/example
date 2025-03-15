@@ -1,0 +1,32 @@
+.layout {
+  min-height: 100vh;
+  background-color: var(--ant-color-bg-container);
+}
+
+.ant-layout-header {
+  background: var(--ant-color-bg-container);
+  border-bottom: 1px solid var(--ant-color-border);
+}
+
+.component-section {
+  background: var(--ant-color-bg-container);
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.component-section h2 {
+  margin-bottom: 24px;
+  color: var(--ant-color-text);
+}
+
+.ant-card {
+  margin-bottom: 24px;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid var(--ant-color-border);
+}
+
+.ant-space-vertical {
+  width: 100%;
+}
