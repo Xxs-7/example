@@ -1,0 +1,46 @@
+:root {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/** Animated Theme Toggle */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 1;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 999;
+}
+
+::view-transition-old(root) {
+  z-index: 999;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; */
+}
