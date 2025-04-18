@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 保留一些自定义的全局样式 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+@layer components {
+  .transition-card {
+    @apply transform transition-all duration-300 ease-in-out;
+  }
+}
